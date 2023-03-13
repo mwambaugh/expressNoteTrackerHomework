@@ -4,7 +4,7 @@ const UUID = require("uuid");
 
 module.exports = function (app) {
     app.get('/api/notes', (req, res) => {
-        fs.readFile(__dirname, + "C:\Users\mwamb\bootcamp\challenges\expressNoteTrackerHomework\db\db.json", (err, data) => {
+        fs.readFile(__dirname, + "\db\db.json", (err, data) => {
             if (err) throw err;
             res.json(JSON.parse(data));
         });
