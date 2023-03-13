@@ -1,7 +1,7 @@
 const path = require("path");
-// const fs = require("fs");
-// const express = require("express");
-// const router = express.Router();
+const fs = require("fs");
+const express = require("express");
+const router = express.Router();
 
 //Routes 
 module.exports = function (app) {

@@ -20,7 +20,7 @@ module.exports = function (app) {
             if (error) throw err;
             noteTotal = JSON.parse(data);
             noteTotal.push(newNote);
-            fs.writeFile(__dirname + '/../db/db.json', JSON.stringffy(noteTotal), "utf-8", err => {
+            fs.writeFile(__dirname + '/../db/db.json', JSON.stringify(noteTotal), "utf-8", err => {
                 if (err) throw err;
                 console.log("good job")
                 res.end();
