@@ -1,11 +1,10 @@
 const fs = require('fs');
 const db = require("../db/db.json");
-// const UUID = require("uuid");
-// const router = express.Router();
+const UUID = require("uuid");
 
 module.exports = function (app) {
-    app.get('api/notes', (req, res) => {
-        fs.readFile(__dirname, + "../db/db.json", (err, data) => {
+    app.get('/api/notes', (req, res) => {
+        fs.readFile(__dirname, + "C:\Users\mwamb\bootcamp\challenges\expressNoteTrackerHomework\db\db.json", (err, data) => {
             if (err) throw err;
             res.json(JSON.parse(data));
         });
@@ -17,11 +16,11 @@ module.exports = function (app) {
             text: req.body.text,
             id: UUID.v4(),
         }
-        fs.readFile(__dirname + '../db/db.json', (err, data) => {
+        fs.readFile(__dirname + '/../db/db.json', (err, data) => {
             if (error) throw err;
             noteTotal = JSON.parse(data);
             noteTotal.push(newNote);
-            fs.writeFile(__dirname + '../db/db.json', JSON.stringffy(noteTotal), "utf-8", err => {
+            fs.writeFile(__dirname + '/../db/db.json', JSON.stringffy(noteTotal), "utf-8", err => {
                 if (err) throw err;
                 console.log("good job")
                 res.end();
@@ -36,12 +35,10 @@ module.exports = function (app) {
             if (err) throw err;
             let notes = JSON.parse(data);
             const filterNote = notes.filter(values => values.id != noteId);
-            fs.writeFile(__dirname + '../db/db.json', JSON.stringify(filterNote), "utf-8", err => {
+            fs.writeFile(__dirname + '/../db/db.json', JSON.stringify(filterNote), "utf-8", err => {
                 if (err) throw err;
                 res.end();
             });
         });
     });
 };
-
-// module.exports = router;

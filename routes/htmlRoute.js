@@ -1,12 +1,12 @@
 const path = require("path");
-const fs = require("fs");
-const express = require("express");
-const router = express.Router();
+// const fs = require("fs");
+// const express = require("express");
+// const router = express.Router();
 
 //Routes 
 module.exports = function (app) {
-    app.get('./public/notes.html', (req, res) => {
-        res.sendFile(path.join(__dirname, '../public/notes.html'))
+    app.get('/./public/notes.html', (req, res) => {
+        res.sendFile(path.join(__dirname, '/../public/notes.html'))
     });
 
     //catch all
@@ -14,5 +14,3 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname, '../public/index.html'))
     });
 };
-
-module.exports = router;
