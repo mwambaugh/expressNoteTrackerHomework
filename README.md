@@ -31,9 +31,6 @@ I have created an application called Note 'tracker' Taker that can be used to wr
 
 ## Visuals 
 [Screenshot of ]( )
-[Screenshot of ]( )
-[Screenshot of ]()
-
 
 ## Contributing 
 This assignment was worked on by student, M.C. Wambaugh, with the support of her TA's during office hours and meeting regularly with a tutor, and her classrom peers. The student also used universial resources such as  YouTube.com, shields.io/, and our class repo examples. Many thanks to those who continue to support learning in the technological community.
