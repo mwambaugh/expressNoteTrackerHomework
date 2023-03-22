@@ -27,10 +27,12 @@
 I have created an application called Note 'tracker' Taker that can be used to write and save notes. This application uses an Express.js back end and saves and retrieve note data from a JSON file.
  
 ## Links  
-[herokuApp Link]()
+[herokuApp Link](https://expressnotetrackerhomework.herokuapp.com/notes)
+[Link to Starter Code](https://github.com/coding-boot-camp/miniature-eureka)
 
 ## Visuals 
-[Screenshot of ]( )
+[Screenshot ](./public/assets/photos/Screenshot%202023-03-22%20132613.jpg)
+[Screenshot ](./public/assets/photos/Screenshot%202023-03-22%20132642.jpg)
 
 ## Contributing 
 This assignment was worked on by student, M.C. Wambaugh, with the support of her TA's during office hours and meeting regularly with a tutor, and her classrom peers. The student also used universial resources such as  YouTube.com, shields.io/, and our class repo examples. Many thanks to those who continue to support learning in the technological community.
